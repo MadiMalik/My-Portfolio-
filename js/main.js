@@ -6,40 +6,7 @@ window.addEventListener('load', () => {
     gsap.to("#loading-overlay", { duration: 1, opacity: 0, display: 'none' });
 });
 
-// Animations for elements with the class 'animation'
-const animations = document.querySelectorAll('.animation');
-animations.forEach(item => {
-    let tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: item,
-            start: '300% center', // Changed 'left' to 'center' for better alignment
-            end: '900% center', // Same as above
-            scrub: true,
-            markers: false,
-            toggleActions: 'play reverse play reverse',
-        }
-    });
 
-    tl.to(item, {
-        x: 800,
-        duration: 5
-    });
-});
-
-// Initialization of Lenis
-const lenis = new Lenis({
-    // Add configuration options if necessary
-});
-
-// Request Animation Frame Loop for Lenis
-let rafId;
-function raf(time) {
-    lenis.raf(time);
-    rafId = requestAnimationFrame(raf);
-}
-rafId = requestAnimationFrame(raf);
-
-// To stop the loop, use: cancelAnimationFrame(rafId);
 
 // Animate banner-left section
 const bannerLeft = document.querySelector(".banner-left");
