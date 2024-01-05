@@ -217,10 +217,10 @@ main{
     text-transform: uppercase;
     letter-spacing: 0;
     padding: 1rem ;
-    width: 10rem;
+    width: 10.5rem;
     background: var(--clr-yellow-300);
     border-radius: 0.7rem;
-    margin-right: 1rem;
+    margin-right: 1.4rem;
     box-shadow: 2px 2px 3px  rgba(0,0,0,0.3);
     text-align: center;
 }
