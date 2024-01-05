@@ -309,7 +309,7 @@ main{
     background: var(--clr-white);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    transition: transform 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 .card:hover {
@@ -321,7 +321,7 @@ main{
     height: 100%;
     object-fit: cover;
     border-radius: 1rem;
-    transition: transform 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 
@@ -354,16 +354,16 @@ main{
 }
 
 .btn-box{
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .content .btn{
     margin-top: 1.4rem;
     margin-bottom: 0.7rem;
     background-color: var(--clr-green-400);
-    width: 6.7rem;
-    padding: 0.8rem;
-    font-size: 0.8rem;
+    width: 9rem;
+    padding: 1rem;
+    font-size: 1rem;
 }
 
 .content .btn:hover{
@@ -372,8 +372,8 @@ main{
 
 
 .content h3{
-    text-align: left;
-    font-size: 1.7rem;
+    text-align: center;
+    font-size: 1.9rem;
     margin: 1rem 0;
     color: var(--clr-yellow-300);
 }
@@ -381,9 +381,8 @@ main{
 .content p{
     font-size: 0.8rem;
     line-height: 1.5;
+    display: none;
 }
-
-
 
 
 
@@ -510,7 +509,10 @@ main{
         gap: 7rem;
         padding: 6rem 14rem ;
     }
-    
+
+    .btn-box{
+        justify-content: flex-end;
+    }
 
     .content .btn{
         margin-top: 1.9rem;
