@@ -336,7 +336,7 @@ main{
     left:0;
     background: rgba(237, 237, 237, 0.85);
     width: 100%;
-    padding: 20px;
+    padding: 1.7rem;
     box-sizing: border-box;
     transform: translateY(100%);
     transition: transform 500ms ease-in-out;
@@ -358,9 +358,12 @@ main{
 }
 
 .content .btn{
-    margin-top: 1.9rem;
-    margin-bottom: 1.6rem;
+    margin-top: 1.4rem;
+    margin-bottom: 0.7rem;
     background-color: var(--clr-green-400);
+    width: 6.7rem;
+    padding: 0.8rem;
+    font-size: 0.8rem;
 }
 
 .content .btn:hover{
@@ -370,10 +373,17 @@ main{
 
 .content h3{
     text-align: left;
-    font-size: 2.5rem;
-    margin: 2rem 0;
+    font-size: 1.7rem;
+    margin: 1rem 0;
     color: var(--clr-yellow-300);
 }
+
+.content p{
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+
 
 
 
@@ -500,6 +510,80 @@ main{
         gap: 7rem;
         padding: 6rem 14rem ;
     }
+
+    .card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 1rem;
+        background: var(--clr-white);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        transition: transform 500ms ease-in-out;
+    }
+    
+    .card:hover {
+        padding: 0;
+    }
+    
+    .card .card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        transition: transform 500ms ease-in-out;
+    }
+    
+    
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        position: absolute;
+        bottom: 0;
+        left:0;
+        background: rgba(237, 237, 237, 0.85);
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+        transform: translateY(100%);
+        transition: transform 500ms ease-in-out;
+    }
+    
+    .card:hover .content {
+        transform: translateY(0);
+    }
+    
+    .card:hover .card-image {
+        transform: scale(1.1);
+        filter: brightness(50%);
+        padding: 0rem;
+        
+    }
+    
+    .btn-box{
+        justify-content: flex-end;
+    }
+    
+    .content .btn{
+        margin-top: 1.9rem;
+        margin-bottom: 1.6rem;
+        background-color: var(--clr-green-400);
+    }
+    
+    .content .btn:hover{
+        background-color: var(--clr-pink-500);
+    }
+    
+    
+    .content h3{
+        text-align: left;
+        font-size: 2.5rem;
+        margin: 2rem 0;
+        color: var(--clr-yellow-300);
+    }
+    
 
     #contact {
         padding: 8rem 6rem;
