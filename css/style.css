@@ -324,8 +324,6 @@ main{
     transition: all 500ms ease-in-out;
 }
 
-
-
 .content {
     display: flex;
     flex-direction: column;
@@ -502,6 +500,11 @@ main{
 
     .main-header{
         font-size: 3.7rem;
+    }
+
+    .btn{
+        width: 11.3rem;
+        
     }
 
     .my-projects {
