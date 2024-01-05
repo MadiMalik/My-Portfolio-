@@ -466,17 +466,17 @@ main{
 }
 
 
-
-
 @media (min-width: 850px){
+
     .nav-list{
         display: flex;
     }
+
     .banner-content{
         padding: 8rem 8rem;
         flex-direction: row;
         gap: 4rem;
-        line-height: 1.6;
+        line-height: 2;
     }
 
     .banner .banner-left {
@@ -510,78 +510,25 @@ main{
         gap: 7rem;
         padding: 6rem 14rem ;
     }
+    
 
-    .card {
-        position: relative;
-        overflow: hidden;
-        border-radius: 1rem;
-        background: var(--clr-white);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 1rem;
-        transition: transform 500ms ease-in-out;
-    }
-    
-    .card:hover {
-        padding: 0;
-    }
-    
-    .card .card-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 1rem;
-        transition: transform 500ms ease-in-out;
-    }
-    
-    
-    
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        text-align: left;
-        position: absolute;
-        bottom: 0;
-        left:0;
-        background: rgba(237, 237, 237, 0.85);
-        width: 100%;
-        padding: 1rem;
-        box-sizing: border-box;
-        transform: translateY(100%);
-        transition: transform 500ms ease-in-out;
-    }
-    
-    .card:hover .content {
-        transform: translateY(0);
-    }
-    
-    .card:hover .card-image {
-        transform: scale(1.1);
-        filter: brightness(50%);
-        padding: 0rem;
-        
-    }
-    
-    .btn-box{
-        justify-content: flex-end;
-    }
-    
     .content .btn{
         margin-top: 1.9rem;
         margin-bottom: 1.6rem;
-        background-color: var(--clr-green-400);
+        width: 10rem;
+        padding: 1.1rem;
+        font-size: 1.5rem;
     }
-    
-    .content .btn:hover{
-        background-color: var(--clr-pink-500);
-    }
-    
     
     .content h3{
         text-align: left;
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         margin: 2rem 0;
-        color: var(--clr-yellow-300);
+    }
+
+    .content p{
+        font-size: 1.4rem;
+        line-height: 1.5;
     }
     
 
@@ -636,7 +583,6 @@ main{
         font-size: 1.6rem;
         font-weight: 600;
         text-transform: uppercase;
-       
     }
     
 
@@ -663,7 +609,7 @@ main{
     width: 50%;
     text-align: left;
     padding: 3rem 1rem 3rem 10rem;
-    /* margin-top: 3.6rem; */
+    
 }
 
 .about-content h2{
