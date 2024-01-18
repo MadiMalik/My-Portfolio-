@@ -100,9 +100,8 @@ main{
 .nav{
     justify-content: space-between;
     height: 4.6rem;
-    padding: 0rem 2rem;
+    padding: 0rem rem;
     box-shadow: 1px 1px 3px var(--clr-green-400);
-    position: fixed;
     z-index: 1000;
     width: 100%;
     background: var(--clr-white);
@@ -112,6 +111,7 @@ main{
     color: var(--clr-yellow-300);
     text-shadow: 1px 3px 3px var(--clr-yellow-400);
     font-family: 'Playball', cursive;
+    margin-left: 2rem;
 }
 
 .nav-list{
@@ -179,6 +179,8 @@ main{
     justify-content: center;
     align-items: center;
     display: flex;
+    transition: all 0.43s;
+    box-sizing: border-box;
 }
 
 
@@ -343,7 +345,7 @@ main{
 .project-sec{
     text-align: center;
     padding: 8rem 0;
-    background:rgba(92, 121, 111, 0.22);;
+    background:rgba(92, 121, 111, 0.22);
 }
 
 
@@ -358,6 +360,9 @@ main{
 }
 
 .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     overflow: hidden;
     border-radius: 1rem;
@@ -373,7 +378,6 @@ main{
 
 .card .card-image {
     width: 100%;
-    height: 100%;
     object-fit: cover;
     border-radius: 1rem;
     transition: all 500ms ease-in-out;
@@ -478,8 +482,15 @@ main{
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
+    border: none;
     border-radius: 4px;
+}
+
+#contact-form input::placeholder, #contact-form textarea::placeholder {
+    /* font-size: ; */
+    font-weight:bold;
+    margin-left: 1rem;
 }
 
 #contact-form .btn {
@@ -518,14 +529,29 @@ main{
 
 
 @media (min-width: 850px){
-
+    header{
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        z-index: 9999999;
+    }
     .nav-list{
         display: flex;
+        position:static;
+        z-index: 11111199;
+    }
+
+    .nav-list-mobile{
+        display: none;
+    }
+
+    main{
+        height: 90vh;
     }
 
     .banner-content{
         padding: 8rem 8rem;
-        flex-direction: row;
+        flex-direction: row-reverse;
         gap: 4rem;
         line-height: 2;
     }
@@ -548,9 +574,6 @@ main{
         width: 31rem;
     }
 
-    .hamburger-icon{
-        display: none;
-    }
 
     .main-header{
         font-size: 3.7rem;
@@ -564,7 +587,11 @@ main{
     .my-projects {
         grid-template-columns: 1fr 1fr ;
         gap: 7rem;
-        padding: 6rem 14rem ;
+        padding: 6rem 16.6rem ;
+    }
+
+    .card {
+        height: 30rem;
     }
 
     .btn-box{
@@ -599,9 +626,7 @@ main{
     #contact section{
         width: 48rem;
         text-align: center;
-    }
-
-    
+    }    
 }
 
 @media (min-width: 1050px){
@@ -609,9 +634,10 @@ main{
         max-height: 58rem;
     }
 
+
+
     .banner-content{
         padding: 6rem 13rem;
-        flex-direction: row-reverse;
         gap: 8rem;
         line-height: 1.6;
     }
