@@ -242,12 +242,10 @@ main{
     font-size: 1.6rem;
     font-weight: 600;  
     text-transform: uppercase;
- 
 }
 
 .subheading{
     font-weight: 500;
-    /* color: var(--clr-pink-500); */
 }
 
 .banner-buttons{
@@ -692,9 +690,9 @@ main{
 
 }
 
-@media (min-width: 1500px){
+@media (min-width: 1556px){
     .wrapper{
-        width: 1500px;
+        width: 1556px;
     }
 
 }
