@@ -239,8 +239,9 @@ main{
 
 .header-span{
     color: var(--clr-yellow-300);
-    font-size: 1.8rem;
-    font-weight: 600;  text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;  
+    text-transform: uppercase;
  
 }
 
@@ -448,12 +449,8 @@ main{
 
 
 #contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     background-color: rgba(92, 121, 111, 1);
-    padding: 8rem 6rem;
+    padding: 7rem 5rem;
 }
 
 #contact section{
@@ -465,62 +462,58 @@ main{
 #contact h2 {
     color: var(--clr-yellow-300);
     font-size: 2em;
-    margin-bottom: 20px;
 }
 
 #contact p {
     color: var(--clr-white);
-    margin: 3rem 0;
+    margin: 4rem 0;
+    line-height: 1.6;
 }
 
 #contact-form {
     flex-direction: column;
-    margin: 0 auto 30px;
+   gap: 2rem;
 }
 
 #contact-form input, #contact-form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    /* border: 1px solid #ddd; */
+    padding: 1.3rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.4rem;
 }
 
 #contact-form input::placeholder, #contact-form textarea::placeholder {
-    /* font-size: ; */
+    font-size: 1.4rem;
     font-weight:bold;
     margin-left: 1rem;
 }
 
 #contact-form .btn {
     width: 100%;
-    padding: 10px;
+    margin: 0 auto;
+    padding: 1.3rem;
     border: none;
     color: white;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
 
-#contact-form button:hover {
+#contact-form .btn:hover {
     background-color: var(--clr-green-500);
     box-shadow: 2px 2px 3px  rgba(0, 0, 0, 0.4);
 }
 
 .contact-info {
-    margin-top: 20px;
-}
+    margin-top: 3rem;
 
-.contact-info p {
-    margin: 5px 0;
 }
 
 .social-media a {
-    margin: 0 10px;
+    margin: 0 1.4rem;
     color: var(--clr-white);
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 .social-media a:hover {
@@ -528,7 +521,7 @@ main{
 }
 
 
-@media (min-width: 850px){
+@media (min-width: 763px){
     header{
         position: sticky;
         position: -webkit-sticky;
@@ -545,26 +538,6 @@ main{
         display: none;
     }
 
-    main{
-        height: 90vh;
-    }
-
-    .banner-content{
-        padding: 8rem 8rem;
-        flex-direction: row-reverse;
-        gap: 4rem;
-        line-height: 2;
-    }
-
-    .banner .banner-left {
-        text-align: left;
-        width: 50%;
-    }
-
-    .banner-left .social-media{
-        justify-content: flex-start;
-        gap: 1rem;
-    }
 
     .banner .banner-right{
         width: 34rem;
@@ -578,20 +551,16 @@ main{
     .main-header{
         font-size: 3.7rem;
     }
+    
 
     .btn{
-        width: 11.3rem;
-        
+        width: 11.3rem; 
     }
 
     .my-projects {
         grid-template-columns: 1fr 1fr ;
-        gap: 7rem;
-        padding: 6rem 16.6rem ;
-    }
-
-    .card {
-        height: 30rem;
+        gap: 4rem;
+        padding: 6rem 6rem ;
     }
 
     .btn-box{
@@ -631,32 +600,32 @@ main{
 
 @media (min-width: 1050px){
     main{
-        max-height: 58rem;
+        min-height: 54rem;
     }
-
-
 
     .banner-content{
-        padding: 6rem 13rem;
-        gap: 8rem;
-        line-height: 1.6;
+        padding: 6rem 11rem;
+        flex-direction: row-reverse;
+        gap: 6rem;
+        line-height: 1.8;
     }
-
+    
     .banner .banner-left {
         text-align: left;
         width: 50%;
     }
 
-    .banner .banner-right{
-        width: 48rem;
-        height: 45rem;
-    }    
-    .banner-content .banner-right img{
-        width: 31rem;
+    .banner-left .social-media{
+        justify-content: flex-start;
+        gap: 1rem;
     }
 
-    .hamburger-icon{
-        display: none;
+    .banner .banner-right{
+        width: 46rem;
+        height: 44rem;
+    }    
+    .banner-content .banner-right img{
+        width: 30rem;
     }
 
     .main-header{
@@ -664,13 +633,14 @@ main{
         letter-spacing: -0.1rem;
     }
 
-    .header-span{
-        color: var(--clr-yellow-300);
-        font-size: 1.6rem;
-        font-weight: 600;
-        text-transform: uppercase;
-    }
-    
+
+
+ 
+
+
+
+
+
 
     /******************************************
 /* ABOUT SECTION DESKTOP STYLES
@@ -678,8 +648,8 @@ main{
 
 .about-sec{  
     flex-direction: row;
-    padding: 7rem 12rem;
-    gap: 5rem;
+    padding: 8rem 10rem;
+    gap: 8rem;
 }
 
 .about-img-box{
@@ -693,21 +663,29 @@ main{
 
 .about-content{
     width: 50%;
-    text-align: left;
-    padding: 3rem 1rem 3rem 10rem;
-    
+    text-align: left;   
 }
 
 .about-content h2{
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     margin-bottom: 3rem;
+}
+
+.about-content p{
+    font-size: 1.5rem;
 }
 
 .about-content .skills{
     justify-content: flex-start;
-    gap: 6rem;
-    margin-top: 3rem;
+    gap: 5rem;
+    margin-top: 4rem;
     font-size: 3rem;
+}
+
+.my-projects {
+    grid-template-columns: 1fr 1fr ;
+    gap: 7rem;
+    padding: 6rem 14rem ;
 }
 
 
