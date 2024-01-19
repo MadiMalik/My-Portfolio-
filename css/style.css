@@ -69,10 +69,14 @@ a{
     display: inline-block;
 }
 
-.flex{
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header-content {
+    justify-content: space-between;
 }
 
 /******************************************
@@ -85,7 +89,7 @@ a{
 
 
 
-main{
+#home {
     /* height: 100vh; */
     min-height: 65rem;
     overflow: hidden;
@@ -107,7 +111,7 @@ main{
     background: var(--clr-white);
 }
 
-.logo{
+.logo {
     color: var(--clr-yellow-300);
     text-shadow: 1px 3px 3px var(--clr-yellow-400);
     font-family: 'Playball', cursive;
@@ -518,8 +522,7 @@ main{
     color: var(--clr-yellow-300);
 }
 
-
-@media (min-width: 763px){
+@media (min-width: 763px) {
     header{
         position: sticky;
         position: -webkit-sticky;
@@ -685,15 +688,11 @@ main{
     gap: 7rem;
     padding: 6rem 14rem ;
 }
-
-
-
 }
 
-@media (min-width: 1556px){
+@media (min-width: 1536px){
     .wrapper{
-        width: 1556px;
+        width: 1536px;
     }
-
 }
 

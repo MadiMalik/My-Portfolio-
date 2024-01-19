@@ -1,321 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compotible" content="IE=edge" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet" />
-   
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compotible" content="IE=edge" />
 
-   
-    <title>Madiha Malik</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.28/bundled/lenis.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-    <script type="module" src="https://kit.fontawesome.com/022591a88a.js" crossorigin="anonymous"></script>
-    
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-  </head>
-  <body>
-    <header class="header sticky-top"   >
-      <nav class="flex nav">
+
+  <title>Madiha Malik</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.28/bundled/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <script type="module" src="https://kit.fontawesome.com/022591a88a.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <header class="header sticky-top nav">
+    <div class="wrapper">
+      <nav class="flex header-content">
         <h2 class="logo">MM</h2>
-
         <ul class="flex nav-list">
           <li><a href="#home" class="icons nav-link">Home</a></li>
           <li><a href="#about" class="icons nav-link">About</a></li>
           <li><a href="#projects" class="icons nav-link">Project</a></li>
           <li><a href="#contact" class="icons nav-link">Contact</a></li>
         </ul>
-
-
-          <ul class="nav-list-mobile">
-            <li>
-              <a href="#home" class="nav-link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                  <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
-                  <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
-               </svg>
+        <ul class="nav-list-mobile">
+          <li>
+            <a href="#home" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path
+                  d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                <path
+                  d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+              </svg>
             </a>
           </li>
           <li>
             <a href="#about" class="nav-link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M512 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H512zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM208 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128zm-32 32c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16H304c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80H176zM376 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H512zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM208 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128zm-32 32c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16H304c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80H176zM376 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376z" />
               </svg>
             </a>
           </li>
           <li>
             <a href="#projects" class="nav-link">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                <path d="M19.5 21a3 3 0 0 0 3-3v-4.5a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3V18a3 3 0 0 0 3 3h15ZM1.5 10.146V6a3 3 0 0 1 3-3h5.379a2.25 2.25 0 0 1 1.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 0 1 3 3v1.146A4.483 4.483 0 0 0 19.5 9h-15a4.483 4.483 0 0 0-3 1.146Z" />
+                <path
+                  d="M19.5 21a3 3 0 0 0 3-3v-4.5a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3V18a3 3 0 0 0 3 3h15ZM1.5 10.146V6a3 3 0 0 1 3-3h5.379a2.25 2.25 0 0 1 1.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 0 1 3 3v1.146A4.483 4.483 0 0 0 19.5 9h-15a4.483 4.483 0 0 0-3 1.146Z" />
               </svg>
             </a>
           </li>
           <li>
             <a href="#contact" class="nav-link">
-              <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
-                <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
-              </svg>    
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-lines-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z" />
+              </svg>
             </a>
           </li>
 
         </ul>
-
-
-     
       </nav>
-    </header>
-    <div class="wrapper">
-
-
-        <main id="home" class="animate-on-scroll">
-     
-
-          <div class="banner flex">
-            <div class="banner-content flex">
-              <section class="banner-left">
-                <span class="header-span">Hello, This is</span>
-                <h1 class="main-header">Madiha Malik</h1>
-    
-                <div class="social-media flex">
-                  <a
-                    href="https://www.linkedin.com/in/madiha-malik-0097aa264/"
-                    target="_blank"
-                    ><i class="fa-brands fa-linkedin"></i
-                  ></a>
-                  <a href="https://github.com/MadiMalik" target="_blank"
-                    ><i class="fa-brands fa-square-github"></i
-                  ></a>
-                  <a href="https://twitter.com/MadiidevMad" target="_blank"
-                    ><i class="fa-brands fa-square-x-twitter"></i
-                  ></a>
-                </div>
-    
-                <p class="subheading">
-                  Front-end web developer ready to enhance your digital presence. Contact me to get started!
-                </p>
-    
-                <div class="banner-buttons">
-                  <a class="btn" href="#">Resume</a>
-                  <a class="btn" href="#contact">Contact me</a>
-                </div>
-              </section>
-    
-              <section class="banner-right animation flex">
-                <img src="css/images/23.png" alt="" />
-              </section>
-            </div>
-          </div>
-        </main>
-    
-        <section id="about" class="about-sec flex">
-          <section class="about-content">
-            <h2>About me</h2>
-            <p>
-              Hi, I'm Madiha – a passionate front-end web developer with a flair for creating websites that are not only responsive and functional but also user-friendly and aesthetically pleasing. My expertise lies in leveraging the power of HTML, CSS, and JavaScript, complemented by advanced libraries like Sass, Bootstrap, Tailwind, and React, to bring dynamic web experiences to life.
-            </p>
-            <ul class="skills flex">
-              <li><i class="fa-brands fa-html5" style="color: #e44c25"></i></li>
-              <li><i class="fa-brands fa-css3-alt" style="color: #264de4"></i></li>
-              <li><i class="fa-brands fa-js" style="color: #f0db4f"></i></li>
-              <li><i class="fa-brands fa-bootstrap" style="color: #7610F7"></i></li>
-              <li><i class="fa-brands fa-sass" style="color: #d0649b"></i></li>
-              <li><i class="fa-brands fa-react" style="color: #00d8ff"></i></li>
-             
-            </ul>
-          </section>
-    
-          <section class="animation about-img-box flex">
-            <img src="css/images/2.png" alt="" />
-          </section>
-        </section>
-    
-        <section id="projects" class="project-sec">
-          <h2>My Projects</h2>
-          <div class="my-projects">
-    
-            <div class="card">
-              <img src="css/images/pro-1.jpg" alt="Background" class="card-image" />
-              <div class="content">
-                <h3>IP Address Tracker</h3>
-                <p>
-                  This was built using React and Tailwind, and to generate the map, I used LeafletJS.
-                </p>
-                <div class="btn-box flex flex"><a class="btn" href="https://ip-address-tracker00.netlify.app/" target="_blank">Live Demo</a></div>
-              </div>
-             </div>
-    
-            <div class="card">
-              <img src="css/images/pro-2.jpg" alt="Background" class="card-image" />
-              <div class="content">
-                <h3>Intro Section With Dropdown Menu</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ab
-                  iste ad autem
-                </p>
-                <div class="btn-box flex"><a class="btn" href="https://intro-section-with-dropdown-menu00.netlify.app/" target="_blank">Live Demo</a></div>
-              </div>
-            </div>
-    
-            <div class="card">
-              <img src="css/images/pro-3.jpg" alt="Background" class="card-image" />
-              <div class="content">
-                <h3>Title Here</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ab
-                  iste ad autem
-                </p>
-                <div class="btn-box flex"><a class="btn" href="#" target="_blank">Live Demo</a></div>
-              </div>
-            </div>
-    
-            <div class="card">
-              <img src="css/images/pro-4.jpg" alt="Background" class="card-image" />
-              <div class="content">
-                <h3>Time tracking dashboard</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ab
-                  iste ad autem
-                </p>
-                <div class="btn-box flex"><a class="btn" href="#" target="_blank">Live Demo</a></div>
-              </div>
-            </div>
-    
-            <div class="card">
-              <img src="css/images/pro-5.jpg" alt="Background" class="card-image" />
-              <div class="content">
-                <h3>REST Countries API with color theme switcher</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ab
-                  iste ad autem
-                </p>
-                <div class="btn-box flex"><a class="btn" href="#" target="_blank">Live Demo</a></div>
-              </div>
-            </div>
-    
-            <div class="card">
-              <img src="css/images/pro-6.jpg" alt="Background" class="card-image" />
-              <div class="content">
-                <h3>Results summary component</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ab
-                  iste ad autem
-                </p>
-                <div class="btn-box flex"><a class="btn" href="https://faq-accordion-card0.netlify.app/" target="_blank">Live Demo</a></div>
-              </div>
-            </div>
-    
-            <div class="card">
-              <img src="css/images/pro-7.jpg" alt="Background" class="card-image" />
-              <div class="content">
-                <h3>Age calculator App</h3>
-                <p>
-                  This challenge enhanced my JavaScript skills, particularly in form validation and handling dates, which was both fun and complex.
-                </p>
-                <div class="btn-box flex"><a class="btn" href="https://age-calculater-app.netlify.app/" target="_blank">Live Demo</a></div>
-              </div>
-            </div>
-    
-            <div class="card">
-              <img src="css/images/pro-8.jpg" alt="Background" class="card-image" />
-              <div class="content">
-                <h3>Sunnyside agency landing page</h3>
-                <p>
-                  This challenge tested my layout and responsive design skills, with a minor focus on JavaScript for the mobile menu and a primary emphasis on HTML and CSS.
-                </p>
-                <div class="btn-box flex"><a class="btn" target="_blank" href="https://sunnyside-agency-landing-page-madi.netlify.app/">Live Demo</a></div>
-              </div>
-            </div>
-    
-            <div class="card">
-              <img src="css/images/pro-9.jpg" alt="Background" class="card-image" />
-              <div class="content">
-                <h3>Newsletter sign-up form with success message</h3>
-                <p>
-                  This web app honed my skills in form design, validation, and DOM manipulation, especially in handling success states.
-                </p>
-                <div class="btn-box flex"><a class="btn" target="_blank" href="https://newsletter-sign-up-with-success00.netlify.app/">Live Demo</a></div>
-              </div>
-            </div>
-            
-          </div>
-        </section>
-    
-        <footer class="flex" id="contact">
-          <section>
-            <h2>Contact Me</h2>
-            <p>
-              For hiring or project discussions, reach out through the form or on social media. Let’s make your ideas a reality!
-            </p>
-    
-            <form
-              class="flex"
-              method="POST"
-              action="https://api.web3forms.com/submit"
-              id="contact-form">
-              <input
-                type="hidden"
-                name="access_key"
-                value="e0df408b-e3e0-4f5c-83fe-3be8e7b20523" />
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                required />
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                required />
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Your Message"
-                required></textarea>
-              <!-- <div class="h-captcha" data-captcha="true"></div> -->
-              <button class="btn" type="submit">Send Message</button>
-            </form>
-    
-            <div class="contact-info">
-              <div class="social-media flex">
-                <a
-                  href="https://www.linkedin.com/in/madiha-malik-0097aa264/"
-                  target="_blank"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-                <a href="https://github.com/MadiMalik" target="_blank"
-                  ><i class="fa-brands fa-square-github"></i
-                ></a>
-                <a href="https://twitter.com/MadiidevMad" target="_blank"
-                  ><i class="fa-brands fa-square-x-twitter"></i
-                ></a>
-              </div>
-            </div>
-          </section>
-        </footer>
-        
-
-      </div>
- 
-
-    <div style="display: none">
-      Illustration by
-      <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a>
-      from <a href="https://icons8.com/illustrations">Ouch!</a>
     </div>
+  </header>
+  <main>
+    <section id="home" class="animate-on-scroll">
+      <div class="banner flex">
+        <div class="banner-content flex">
+          <section class="banner-left">
+            <span class="header-span">Hello, This is</span>
+            <h1 class="main-header">Madiha Malik</h1>
 
+            <div class="social-media flex">
+              <a href="https://www.linkedin.com/in/madiha-malik-0097aa264/" target="_blank"><i
+                  class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/MadiMalik" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+              <a href="https://twitter.com/MadiidevMad" target="_blank"><i
+                  class="fa-brands fa-square-x-twitter"></i></a>
+            </div>
 
-    <script type="module" src="js/main.js"></script>
-  </body>
+            <p class="subheading">
+              Front-end web developer ready to enhance your digital presence. Contact me to get started!
+            </p>
+
+            <div class="banner-buttons">
+              <a class="btn" href="#">Resume</a>
+              <a class="btn" href="#contact">Contact me</a>
+            </div>
+          </section>
+
+          <section class="banner-right animation flex">
+            <img src="css/images/23.png" alt="" />
+          </section>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-sec">
+      <div class="wrapper flex">
+        <section class="about-content">
+          <h2>About me</h2>
+          <p>
+            Hi, I'm Madiha – a passionate front-end web developer with a flair for creating websites that are not only
+            responsive and functional but also user-friendly and aesthetically pleasing. My expertise lies in leveraging
+            the power of HTML, CSS, and JavaScript, complemented by advanced libraries like Sass, Bootstrap, Tailwind, and
+            React, to bring dynamic web experiences to life.
+          </p>
+          <ul class="skills flex">
+            <li><i class="fa-brands fa-html5" style="color: #e44c25"></i></li>
+            <li><i class="fa-brands fa-css3-alt" style="color: #264de4"></i></li>
+            <li><i class="fa-brands fa-js" style="color: #f0db4f"></i></li>
+            <li><i class="fa-brands fa-bootstrap" style="color: #7610F7"></i></li>
+            <li><i class="fa-brands fa-sass" style="color: #d0649b"></i></li>
+            <li><i class="fa-brands fa-react" style="color: #00d8ff"></i></li>
+
+          </ul>
+        </section>
+        <section class="animation about-img-box flex">
+          <img src="css/images/2.png" alt="" />
+        </section>
+      </div>
+    </section>
+    <section id="projects" class="project-sec">
+      <h2>My Projects</h2>
+      <div class="wrapper">
+        <div class="my-projects">
+          <div class="card">
+            <img src="css/images/pro-1.jpg" alt="Background" class="card-image" />
+            <div class="content">
+              <h3>IP Address Tracker</h3>
+              <p>
+                This was built using React and Tailwind, and to generate the map, I used LeafletJS.
+              </p>
+              <div class="btn-box flex flex"><a class="btn" href="https://ip-address-tracker00.netlify.app/"
+                  target="_blank">Live Demo</a></div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="css/images/pro-2.jpg" alt="Background" class="card-image" />
+            <div class="content">
+              <h3>Intro Section With Dropdown Menu</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ab
+                iste ad autem
+              </p>
+              <div class="btn-box flex"><a class="btn" href="https://intro-section-with-dropdown-menu00.netlify.app/"
+                  target="_blank">Live Demo</a></div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="css/images/pro-3.jpg" alt="Background" class="card-image" />
+            <div class="content">
+              <h3>Title Here</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ab
+                iste ad autem
+              </p>
+              <div class="btn-box flex"><a class="btn" href="#" target="_blank">Live Demo</a></div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="css/images/pro-4.jpg" alt="Background" class="card-image" />
+            <div class="content">
+              <h3>Time tracking dashboard</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ab
+                iste ad autem
+              </p>
+              <div class="btn-box flex"><a class="btn" href="#" target="_blank">Live Demo</a></div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="css/images/pro-5.jpg" alt="Background" class="card-image" />
+            <div class="content">
+              <h3>REST Countries API with color theme switcher</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ab
+                iste ad autem
+              </p>
+              <div class="btn-box flex"><a class="btn" href="#" target="_blank">Live Demo</a></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="css/images/pro-6.jpg" alt="Background" class="card-image" />
+            <div class="content">
+              <h3>Results summary component</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ab
+                iste ad autem
+              </p>
+              <div class="btn-box flex"><a class="btn" href="https://faq-accordion-card0.netlify.app/"
+                  target="_blank">Live Demo</a></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="css/images/pro-7.jpg" alt="Background" class="card-image" />
+            <div class="content">
+              <h3>Age calculator App</h3>
+              <p>
+                This challenge enhanced my JavaScript skills, particularly in form validation and handling dates, which
+                was both fun and complex.
+              </p>
+              <div class="btn-box flex"><a class="btn" href="https://age-calculater-app.netlify.app/" target="_blank">Live
+                  Demo</a></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="css/images/pro-8.jpg" alt="Background" class="card-image" />
+            <div class="content">
+              <h3>Sunnyside agency landing page</h3>
+              <p>
+                This challenge tested my layout and responsive design skills, with a minor focus on JavaScript for the
+                mobile menu and a primary emphasis on HTML and CSS.
+              </p>
+              <div class="btn-box flex"><a class="btn" target="_blank"
+                  href="https://sunnyside-agency-landing-page-madi.netlify.app/">Live Demo</a></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="css/images/pro-9.jpg" alt="Background" class="card-image" />
+            <div class="content">
+              <h3>Newsletter sign-up form with success message</h3>
+              <p>
+                This web app honed my skills in form design, validation, and DOM manipulation, especially in handling
+                success states.
+              </p>
+              <div class="btn-box flex"><a class="btn" target="_blank"
+                  href="https://newsletter-sign-up-with-success00.netlify.app/">Live Demo</a></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <footer class="flex" id="contact">
+      <section>
+        <h2>Contact Me</h2>
+        <p>
+          For hiring or project discussions, reach out through the form or on social media. Let’s make your ideas a
+          reality!
+        </p>
+
+        <form class="flex" method="POST" action="https://api.web3forms.com/submit" id="contact-form">
+          <input type="hidden" name="access_key" value="e0df408b-e3e0-4f5c-83fe-3be8e7b20523" />
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          <!-- <div class="h-captcha" data-captcha="true"></div> -->
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <div class="social-media flex">
+            <a href="https://www.linkedin.com/in/madiha-malik-0097aa264/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/MadiMalik" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://twitter.com/MadiidevMad" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </main>
+  <div style="display: none">
+    Illustration by
+    <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a>
+    from <a href="https://icons8.com/illustrations">Ouch!</a>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+
 </html>
